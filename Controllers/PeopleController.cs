@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using PeopleManager.Models;
 
 namespace PeopleManager.Controllers
 {
@@ -7,7 +9,9 @@ namespace PeopleManager.Controllers
         // GET
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Person> personen = new List<Person>();
+            personen = Person.maakData();
+            return View(personen);
         }
     }
 }

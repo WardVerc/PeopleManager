@@ -1,8 +1,19 @@
-﻿
+﻿@model IEnumerable<Person>;
+
 @{
     ViewBag.Title = "People";
     Layout = "_Layout";
 }
 
 <h2>People</h2>
-<p>En een beetje tekst hier zo</p>
+<table>
+    <tr>
+        <th>Naam</th>
+        <th>Adres</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <partial name="PersonPartial" model="person"/>
+    }
+    
+</table>

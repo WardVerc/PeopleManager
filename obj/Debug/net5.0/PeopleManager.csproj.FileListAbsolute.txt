@@ -39,3 +39,4 @@ D:\Vives\Projecten Rider - WebDev\PeopleManager\bin\Debug\net5.0\PeopleManager.V
 D:\Vives\Projecten Rider - WebDev\PeopleManager\obj\Debug\net5.0\PeopleManager.Views.pdb
 D:\Vives\Projecten Rider - WebDev\PeopleManager\obj\Debug\net5.0\PeopleManager.genruntimeconfig.cache
 D:\Vives\Projecten Rider - WebDev\PeopleManager\obj\Debug\net5.0\PeopleManager.csproj.CopyComplete
+D:\Vives\Projecten Rider - WebDev\PeopleManager\obj\Debug\net5.0\Razor\Views\Shared\PersonPartial.cshtml.g.cs
