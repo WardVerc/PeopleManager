@@ -1,17 +1,28 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using PeopleManager.Core;
 using PeopleManager.Models;
 
 namespace PeopleManager.Controllers
 {
     public class PeopleController : Controller
     {
-        // GET
+        private readonly IDatabase _database;
+
+        public PeopleController(IDatabase database)
+        {
+            _database = database;
+        }
         public IActionResult Index()
         {
-            IEnumerable<Person> personen = new List<Person>();
-            personen = Person.maakData();
+            var personen = GetPeople();
+            
             return View(personen);
+        }
+
+        public IList<Person> GetPeople()
+        {
+            return _database.People;
         }
     }
 }
