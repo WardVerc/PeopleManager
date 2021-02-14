@@ -3,4 +3,9 @@
 <tr>
     <td>@Model.Naam</td>
     <td>@Model.Adres</td>
+    <td><a class="btn btn-light" asp-route-id="@Model.Id" asp-action="Edit">Bewerken</a>
+        <form method="post">
+        <button class="btn btn-light" style="background-color: red; margin-left: 10px;" asp-route-id="@Model.Id" asp-action="Delete">Verwijderen</button>
+        </form>
+        </td>
 </tr>

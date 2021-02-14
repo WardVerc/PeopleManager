@@ -10,6 +10,7 @@
     <tr class="table-primary">
         <th>Naam</th>
         <th>Adres</th>
+        <th>Acties</th>
     </tr>
     @foreach (var person in Model)
     {
@@ -17,3 +18,5 @@
     }
     
 </table>
+
+<a asp-action="Create" class="btn btn-primary">Nieuw</a>

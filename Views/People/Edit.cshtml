@@ -1,0 +1,10 @@
+﻿@model PeopleManager.Models.Person;
+
+<form method="post">
+    <input type="hidden" asp-for="Id" value="@Model.Id" />
+    <label asp-for="Naam">Naam</label>
+    <input asp-for="Naam" class="form-control" value="@Model.Naam"/>
+    <label asp-for="Adres">Adres</label>
+    <input asp-for="Adres" class="form-control" value="@Model.Adres"/>
+    <input type="submit" value="Bewerken" class="btn btn-primary" style="margin-top: 10px;"/>
+</form>
