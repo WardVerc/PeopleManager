@@ -81,7 +81,7 @@ namespace PeopleManager.Controllers
                 return RedirectToAction("Index");
             }
         }
-
+        
         [HttpPost]
         [Route("People/Delete/{id?}")]
         public IActionResult Delete(int id)
